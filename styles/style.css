@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -35,12 +38,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
@@ -227,7 +224,7 @@ ol {
   flex-grow: 1;
 }
 
-.content__list-item {
+.content__list-item:not(:first-child) {
   margin-bottom: 30px;
 }
 
